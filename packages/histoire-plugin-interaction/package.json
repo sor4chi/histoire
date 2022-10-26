@@ -1,0 +1,38 @@
+{
+  "name": "@histoire/plugin-interaction",
+  "version": "0.11.5",
+  "description": "Histoire plugin to add interaction testing gui to your stories",
+  "license": "MIT",
+  "author": {
+    "name": "sor4chi"
+  },
+  "repository": {
+    "url": "https://github.com/Akryum/histoire.git",
+    "type": "git",
+    "directory": "packages/histoire-plugin-interaction"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./*"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc -d",
+    "watch": "tsc -d -w --sourceMap"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.32",
+    "histoire": "workspace:*",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "histoire": "^0.11.5"
+  }
+}
