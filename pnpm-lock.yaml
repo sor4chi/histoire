@@ -176,6 +176,23 @@ importers:
       start-server-and-test: 1.14.0
       vite: 3.1.4_sass@1.55.0
 
+  examples/vue3-interaction:
+    specifiers:
+      '@histoire/plugin-interaction': workspace:*
+      '@histoire/plugin-vue': workspace:*
+      '@vitejs/plugin-vue': ^3.0.1
+      histoire: workspace:*
+      vite: ^3.0.5
+      vue: ^3.2.31
+    dependencies:
+      vue: 3.2.40
+    devDependencies:
+      '@histoire/plugin-interaction': link:../../packages/histoire-plugin-interaction
+      '@histoire/plugin-vue': link:../../packages/histoire-plugin-vue
+      '@vitejs/plugin-vue': 3.1.2_vite@3.1.4+vue@3.2.40
+      histoire: link:../../packages/histoire
+      vite: 3.1.4
+
   examples/vue3-percy:
     specifiers:
       '@histoire/plugin-percy': workspace:*
@@ -453,8 +470,15 @@ importers:
   packages/histoire-plugin-interaction:
     specifiers:
       '@types/node': ^17.0.32
+      defu: ^6.0.0
+      fs-extra: ^10.1.0
       histoire: workspace:*
+      pathe: ^0.2.0
       typescript: ^4.7.4
+    dependencies:
+      defu: 6.1.0
+      fs-extra: 10.1.0
+      pathe: 0.2.0
     devDependencies:
       '@types/node': 17.0.45
       histoire: link:../histoire
