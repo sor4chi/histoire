@@ -1,0 +1,20 @@
+{
+  "name": "histoire-example-vue3-screenshot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@histoire/plugin-interaction": "workspace:*",
+    "@histoire/plugin-vue": "workspace:*",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "histoire": "workspace:*",
+    "vite": "^3.0.5"
+  }
+}
